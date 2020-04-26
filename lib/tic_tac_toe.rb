@@ -50,8 +50,8 @@ class TicTacToe
 
   def turn
     puts "Player #{current_player}, please enter 1-9:"
-    @input = gets.strip
-    index = input_to_index(@input)
+    input = gets.strip
+    index = input_to_index(input)
   if valid_move?(index, current_player) == true
       move(index, current_player)
     else
