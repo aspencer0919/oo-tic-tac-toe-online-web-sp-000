@@ -2,5 +2,5 @@
 require 'pry'
 require_relative '../lib/tic_tac_toe.rb'
 
-puts "Player #{current_player}, please enter 1-9:"
-@input = gets.strip
+game = TicTacToe.new
+game.play
