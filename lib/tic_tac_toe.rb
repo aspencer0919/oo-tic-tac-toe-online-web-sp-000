@@ -98,10 +98,9 @@ class TicTacToe
   end
 
   def play
-    puts "Player #{current_player}, please enter 1-9:"
-#    while over? == false
-#      turn
-#    end
+    while over? == false
+      turn
+    end
     if draw?
     	puts "Cat's Game!"
     elsif winner == "X"
