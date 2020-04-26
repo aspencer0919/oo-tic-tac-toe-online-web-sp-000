@@ -48,8 +48,7 @@ class TicTacToe
     turn_count % 2 == 0 ? "X" : "O"
   end
 
-  def turn
-    puts "Player #{current_player}, please enter 1-9:"
+  def turn(input)
     input = gets.strip
     index = input_to_index(input)
   if valid_move?(index, current_player) == true
@@ -96,6 +95,7 @@ class TicTacToe
   end
 
   def play
+    puts "Player #{current_player}, please enter 1-9:"
 #    while over? == false
 #      turn
 #    end
