@@ -49,7 +49,7 @@ class TicTacToe
   end
 
   def turn
-    puts "Player #{current_player}, please enter 1-9:"
+#    puts "Player #{current_player}, please enter 1-9:"
     index = input_to_index(@input)
     cp = current_player
     if valid_move?(index)
@@ -96,9 +96,9 @@ class TicTacToe
   end
 
   def play
-    while over? == false
-      turn
-    end
+#    while over? == false
+#      turn
+#    end
     if draw?
     	puts "Cat's Game!"
     elsif winner == "X"
