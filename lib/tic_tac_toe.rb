@@ -52,11 +52,11 @@ class TicTacToe
 #    puts "Player #{current_player}, please enter 1-9:"
     index = input_to_index(@input)
     cp = current_player
-    if valid_move?(index)
-      move(index, cp)
-    else
-      turn
-    end
+#  if valid_move?(index)
+#      move(index, cp)
+#    else
+#      turn
+#    end
   end
 
   def won?
